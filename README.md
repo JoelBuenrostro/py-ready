@@ -8,6 +8,7 @@ Python project template
   - [Purpose](#Purpose)
 - [Prototyping](#Prototyping)
 - [Environment](#Environment)
+  - [Pipenv](#Pipenv)
 
 ## Overview
 
@@ -24,3 +25,13 @@ During project development with Python, you will need to spend a few hours proto
 ## Environment
 
 Pipenv has excellent support for managing direct dependencies while keeping track of a full set of dependency versions that are known to work correctly and ensuring that your environment is kept up to date. That makes it good fit for modern pure Python projects.
+
+### Pipenv
+
+Pipenv is a tool that aims to bring the best of all packaging worlds (bundler, composer, npm, cargo, yarn, etc.) to the Python world.
+
+If you already have Python and pip, you can easily install Pipenv into your home directory:
+
+```
+pip install --user pipenv
+```
