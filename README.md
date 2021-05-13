@@ -27,7 +27,7 @@ Jupyter is not specific to python, so the recommendation is to install it in suc
 
 To install Jupyter on your system run:
 
-```
+```bash
 python -m pip install --user jupyter
 ```
 
@@ -41,7 +41,7 @@ Pipenv is a tool that aims to bring the best of all packaging worlds (bundler, c
 
 If you already have Python and pip, you can easily install Pipenv into your home directory:
 
-```
+```bash
 pip install --user pipenv
 ```
 
@@ -49,7 +49,21 @@ pip install --user pipenv
 
 The first step is to go to the directory of the project in which you are going to work. Then declare a new isolated development environment with ipykernel.
 
-```
-pipenv install ipykernel --dev
+```bash
+pipenv install ipykernel
 pipenv run ipython kernel install --user --name=yourprojectname
+```
+
+With this setup, you can start jupyter and see the kernels that you have installed in your system and act as an isolated environment. This allows us to select the kernel without having to activate this isolated environment manually each time.
+
+Installed kernles can be listed with
+
+```bash
+jupyter kernelspec list
+```
+
+and removed with
+
+```bash
+jupyter kernelspec remove
 ```
