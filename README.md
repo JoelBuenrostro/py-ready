@@ -10,6 +10,7 @@ Python project template
 - [Environment](#Environment)
   - [Pipenv](#Pipenv)
   - [Setting up a project](#Setting-up-a-project)
+  - [Installing Dependencies](#Installing-dependencies)
 
 ## Overview
 
@@ -67,3 +68,10 @@ and removed with
 ```bash
 jupyter kernelspec remove
 ```
+
+With the project setup ready, now you can start prototyping your application.
+
+### Installing Dependencies
+
+The pip install command adds the dependency to Pipfile and the particular version that is picked to Pipfile.lock . Files with the extension .lock are often added to the ignore set in version control. You should make an exception for Pipfile.lock as it helps when reconstructing old environments and performing repeatable deployments.
+When we return to the notebook, we need to restart the kernel to ensure the new dependency is available. Click the Kernel menu, then restart.
